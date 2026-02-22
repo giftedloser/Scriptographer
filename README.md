@@ -6,8 +6,7 @@
 
 Scriptographer is a professional, high-performance PowerShell deployment tool designed for Windows domain administrators. It enables rapid, reliable deployment of PowerShell scripts to multiple target machines with real-time feedback, complete execution logging, and a stunning UI.
 
-<img width="1384" height="861" alt="image" src="https://github.com/user-attachments/assets/6c1d35a4-9891-4f6b-b249-494fb40f66f8" />
-
+<img width="1384" height="861" alt="image" src="https://github.com/user-attachments/assets/912f8f3f-2853-4681-be6e-fe697e42dae1" />
 
 ## ✨ Key Features
 
