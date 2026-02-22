@@ -1,21 +1,20 @@
-
 # Scriptographer
 
-> A professional PowerShell deployment tool for Windows domain administrators.
+> A professional multi-language script deployment tool for Windows environments.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
+Deploy scripts to multiple machines simultaneously — with real-time feedback, full execution logging, and a UI that doesn't get in the way.
+
 <img width="1384" height="861" alt="image" src="https://github.com/user-attachments/assets/53fc6437-3fa0-40a5-a1bf-c177a95a3f65" />
 
-
-Deploy PowerShell scripts to hundreds of machines simultaneously — with real-time feedback, full execution logging, and a UI that doesn't get in the way.
 
 ---
 
 ## Features
 
 **Multi-Target Deployment**
-Deploy to hundreds of machines at once without freezing the UI. Built for scale.
+Deploy to many machines at once with a non-blocking UI. Designed to handle real-world domain environments without grinding to a halt.
 
 **Three Execution Methods**
 - **PSRemoting** — Standard WinRM-based remote execution
@@ -74,7 +73,7 @@ The installer will be output to the `dist/` directory.
 
 ## Documentation
 
-Full guides on execution methods, WinRM configuration, and troubleshooting are available in the [`/docs`](./docs) directory.
+Full guides on execution methods, WinRM configuration, and troubleshooting are available in the [`__docs`](./__docs) directory.
 
 ---
 
@@ -93,6 +92,12 @@ Full guides on execution methods, WinRM configuration, and troubleshooting are a
 ## Contributing
 
 Issues and pull requests are welcome. Check the [issues page](https://github.com/yourusername/scriptographer/issues) to get started.
+
+Particularly interested in:
+- Bug reports and edge cases from real domain environments
+- New execution method ideas
+- Support for additional script types (Bash, Python, Batch)
+- UI/UX feedback
 
 ---
 
