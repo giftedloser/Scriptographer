@@ -1,76 +1,99 @@
-# Scriptographer
-
-**Version:** 1.0.0  
-**Platform:** Windows  
-**License:** MIT
-
-Scriptographer is a professional, high-performance PowerShell deployment tool designed for Windows domain administrators. It enables rapid, reliable deployment of PowerShell scripts to multiple target machines with real-time feedback, complete execution logging, and a stunning UI.
 
 <img width="1384" height="861" alt="image" src="https://github.com/user-attachments/assets/53fc6437-3fa0-40a5-a1bf-c177a95a3f65" />
+# Scriptographer
 
-## ✨ Key Features
+> A professional PowerShell deployment tool for Windows domain administrators.
 
-- 🚀 **Multi-Target Deployment** - Deploy scripts to hundreds of machines simultaneously without freezing the UI.
-- 🛠️ **Three Execution Methods**:
-  - **PSRemoting**: Standard WinRM-based execution.
-  - **PsExec**: High-privilege remote execution via Sysinternals.
-  - **Copy-First**: Copies scripts locally before execution for restrictive environments.
-- 🎨 **Beautiful Theming** - Includes Dark, Light, Cyberpunk, and Ocean themes, with the Monaco editor seamlessly integrating into the active canvas.
-- 🗂️ **Script Organization** - Organize scripts into **Categories (Folders)**. Features full **Drag-and-Drop** support and inline renaming.
-- 💻 **Professional Editor** - Built-in Monaco editor with PowerShell syntax highlighting, word wrap, and shortcut support (Ctrl+S to save).
-- 📊 **Real-Time Logging** - Live feedback with color-coded status, execution metrics, and full history retention.
-- 🎯 **Target Groups** - Save and reuse lists of target computers for quick deployments.
+![Version](https://img.shields.io/badge/version-1.0.0-blue) ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
-## 🚀 Quick Start
+Deploy PowerShell scripts to hundreds of machines simultaneously — with real-time feedback, full execution logging, and a UI that doesn't get in the way.
+
+---
+
+## Features
+
+**Multi-Target Deployment**
+Deploy to hundreds of machines at once without freezing the UI. Built for scale.
+
+**Three Execution Methods**
+- **PSRemoting** — Standard WinRM-based remote execution
+- **PsExec** — High-privilege execution via Sysinternals
+- **Copy-First** — Copies the script locally before executing, for restrictive environments
+
+**Professional Editor**
+Monaco editor with PowerShell syntax highlighting, word wrap, and `Ctrl+S` to save. The editor adapts to your active theme seamlessly.
+
+**Script Organization**
+Organize scripts into category folders with full drag-and-drop support and inline renaming.
+
+**Target Groups**
+Save and reuse lists of target machines for faster, repeatable deployments.
+
+**Real-Time Logging**
+Live color-coded output with execution metrics and full history retention.
+
+**Theming**
+Four built-in themes: Dark, Light, Cyberpunk, and Ocean.
+
+---
+
+## Quick Start
 
 ### Prerequisites
 
-- **Operating System:** Windows 10/11 or Windows Server 2016+
-- **PowerShell:** 5.1 or later
-- **Node.js**: v18+ (For building from source)
+- Windows 10/11 or Windows Server 2016+
+- PowerShell 5.1+
+- Node.js v18+ *(only required for building from source)*
 
-### Installation (Pre-compiled)
+### Install (Pre-compiled)
 
-Download the latest `Scriptographer Setup 1.0.0.exe` release from the repository and install it.
+Download the latest `Scriptographer Setup 1.0.0.exe` from the [Releases](https://github.com/yourusername/scriptographer/releases) page and run the installer.
 
-### Building from Source
+### Build from Source
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/scriptographer.git
-   cd scriptographer
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run in development mode:
-   ```bash
-   npm run dev
-   ```
-4. Build the production installer:
-   ```bash
-   npm run pack
-   ```
-   _The installer will be placed in the `dist/` directory._
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/scriptographer.git
+cd scriptographer
 
-## 📚 Documentation
+# Install dependencies
+npm install
 
-For detailed guides on how to use the different execution methods, configure WinRM, or troubleshoot connections, please view the [docs directory](docs/README.md).
+# Run in development mode
+npm run dev
 
-## 🛠️ Tech Stack
+# Build the production installer
+npm run pack
+```
 
-- **Framework**: Electron + React + TypeScript
-- **Styling**: Tailwind CSS + Lucide Icons
-- **Editor**: Monaco Editor (`@monaco-editor/react`)
-- **Database**: SQLite (`sql.js`)
-- **PowerShell Execution**: `node-powershell`
+The installer will be output to the `dist/` directory.
 
-## 🤝 Contributing
+---
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/scriptographer/issues).
+## Documentation
 
-## 📝 License
+Full guides on execution methods, WinRM configuration, and troubleshooting are available in the [`/docs`](./docs) directory.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-# Scriptographer
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Electron + React + TypeScript |
+| Styling | Tailwind CSS + Lucide Icons |
+| Editor | Monaco Editor |
+| Database | SQLite (sql.js) |
+| PowerShell | node-powershell |
+
+---
+
+## Contributing
+
+Issues and pull requests are welcome. Check the [issues page](https://github.com/yourusername/scriptographer/issues) to get started.
+
+---
+
+## License
+
+MIT — see [LICENSE](./LICENSE) for details.
