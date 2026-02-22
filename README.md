@@ -48,7 +48,7 @@ Four built-in themes: Dark, Light, Cyberpunk, and Ocean.
 
 ### Install (Pre-compiled)
 
-Download the latest `Scriptographer Setup 1.0.0.exe` from the [Releases](https://github.com/yourusername/scriptographer/releases) page and run the installer.
+Download the latest `Scriptographer Setup 1.0.0.exe` from the [Releases](https://github.com/giftedloser/Scriptographer/releases) page and run the installer.
 
 ### Build from Source
 
