@@ -1,0 +1,8 @@
+localhost
+invalid-host-xyz
+127.0.0.1
+
+
+   
+GIL-IT-SLM5F
+nonexistent.local

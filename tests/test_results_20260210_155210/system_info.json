@@ -1,0 +1,10 @@
+{
+  "TestTimestamp": "2026-02-10 15:52:11",
+  "IsAdministrator": true,
+  "PowerShellVersion": "7.5.4",
+  "TestDuration": 0.0252247,
+  "Hostname": "GIL-IT-SLM5F",
+  "OSArchitecture": "64-bit",
+  "OSVersion": "Microsoft Windows 11 Enterprise",
+  "WinRMStatus": 4
+}

@@ -1,0 +1,7 @@
+localhost
+localhost
+127.0.0.1
+localhost
+GIL-IT-SLM5F
+localhost
+127.0.0.1

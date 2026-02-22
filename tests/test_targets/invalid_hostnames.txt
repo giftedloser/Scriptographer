@@ -1,0 +1,7 @@
+nonexistent-server-xyz123.local
+server..domain.com
+server-.domain.com
+server@domain.com
+server#123.local
+invalid_host_with_underscores
+host-with-very-long-name-that-exceeds-normal-dns-limits-and-might-cause-issues.domain.com

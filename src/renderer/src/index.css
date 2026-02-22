@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark Mode (Default) - Rich Slate instead of Pure Black */
+  --bg-app: #09090b; /* zinc-950 */
+  --bg-panel: #18181b; /* zinc-900 */
+  --bg-elevated: #27272a; /* zinc-800 */
+  --bg-input: #111113; /* custom dark for inputs */
+  --bg-hover: #3f3f46; /* zinc-700 */
+
+  --border-subtle: #27272a;
+  --border-default: #3f3f46;
+  --border-strong: #52525b;
+
+  --text-primary: #f4f4f5; /* zinc-100 */
+  --text-secondary: #a1a1aa; /* zinc-400 */
+  --text-tertiary: #71717a; /* zinc-500 */
+
+  /* Primary Accent - Indigo/Blue */
+  --accent-primary: #6366f1; /* indigo-500 */
+  --accent-hover: #818cf8; /* indigo-400 */
+  --accent-subtle: rgba(99, 102, 241, 0.15);
+
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+}
+
+[data-theme="light"] {
+  --bg-app: #f4f4f5; /* zinc-100 */
+  --bg-panel: #ffffff;
+  --bg-elevated: #f4f4f5;
+  --bg-input: #ffffff;
+  --bg-hover: #e4e4e7; /* zinc-200 */
+
+  --border-subtle: #e4e4e7;
+  --border-default: #d4d4d8; /* zinc-300 */
+  --border-strong: #a1a1aa;
+
+  --text-primary: #18181b; /* zinc-900 */
+  --text-secondary: #52525b; /* zinc-600 */
+  --text-tertiary: #71717a; /* zinc-500 */
+
+  --accent-primary: #4f46e5; /* indigo-600 */
+  --accent-hover: #4338ca; /* indigo-700 */
+  --accent-subtle: rgba(79, 70, 229, 0.1);
+}
+
+/* Cyberpunk Theme */
+[data-theme="cyberpunk"] {
+  --bg-app: #0f0914;      
+  --bg-panel: #1a0f2e;    
+  --bg-elevated: #2d1b4e; 
+  --bg-input: #120b1f;    
+  --bg-hover: #3d256a;    
+
+  --border-subtle: #3d256a;
+  --border-default: #5a3699; 
+  --border-strong: #fcee0a; /* Cyberpunk Yellow */
+
+  --text-primary: #f8f8f2;  
+  --text-secondary: #ff7edb; /* Pink */
+  --text-tertiary: #b18bb1;  
+
+  --accent-primary: #00ff9f; /* Neon Green */
+  --accent-hover: #00e58f;   
+  --accent-subtle: rgba(0, 255, 159, 0.15);
+
+  --success: #00ff9f;
+  --error: #ff0055;
+  --warning: #fcee0a;
+}
+
+/* Ocean Theme */
+[data-theme="ocean"] {
+  --bg-app: #0b132b;      
+  --bg-panel: #14213d;    
+  --bg-elevated: #1d2d50; 
+  --bg-input: #0f1934;    
+  --bg-hover: #263c6b;    
+
+  --border-subtle: #1d2d50;
+  --border-default: #263c6b; 
+  --border-strong: #3b5998;
+
+  --text-primary: #f0f4f8;  
+  --text-secondary: #9cb4d8; 
+  --text-tertiary: #6b8bb8;  
+
+  --accent-primary: #00adb5; /* Teal */
+  --accent-hover: #00c1c9;   
+  --accent-subtle: rgba(0, 173, 181, 0.15);
+
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f2a900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-size: 11px;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga", "kern";
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-elevated);
+  border-radius: 5px;
+  border: 2px solid var(--bg-panel);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-hover);
+}
+
+/* Monaco Editor Theming */
+.monaco-editor, 
+.monaco-editor-background, 
+.monaco-editor .inputarea.ime-input,
+.monaco-editor .margin {
+  background-color: var(--bg-app) !important;
+}
+
+/* Make sure the text color somewhat respects the theme tint */
+[data-theme="cyberpunk"] .monaco-editor .mtk1 { color: var(--text-primary) !important; }
+[data-theme="ocean"] .monaco-editor .mtk1 { color: var(--text-primary) !important; }
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-subtle);
+  color: var(--accent-primary);
+}
+[data-theme="dark"] ::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #c7d2fe;
+}
+[data-theme="cyberpunk"] ::selection {
+  background: rgba(0, 255, 159, 0.3);
+  color: #00ff9f;
+}
+[data-theme="ocean"] ::selection {
+  background: rgba(0, 173, 181, 0.3);
+  color: #a5f3fc;
+}
+
+/* Transitions */
+button,
+input,
+textarea,
+a {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}

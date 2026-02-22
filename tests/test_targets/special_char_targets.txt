@@ -1,0 +1,10 @@
+server!test
+server@domain
+server#123
+server
+server%test
+server^test
+server&test
+server*test
+server(test)
+server[test]
