@@ -86,16 +86,28 @@ Located on the left side, displays all saved scripts.
 
 **Display Format:**
 
+Scripts are grouped into logical **Categories** (Folders) that can be collapsed or expanded.
+
 ```
 ┌─────────────────────────┐
-│ 🖥️ Get System Info      │
-│    system, audit        │
+│ 📂 Maintenance          │
+│   🖥️ Get System Info  │
+│      system, audit     │
+│   🖥️ Clear Temp Files │
+│      cleanup           │
+│ 📁 Utilities            │
 └─────────────────────────┘
 ```
 
-- **Icon:** Terminal icon (blue)
-- **Name:** Script title (white, bold)
-- **Tags:** Comma-separated tags (gray, monospace)
+**Folder Actions:**
+
+- **Add:** Click the Folder+ icon at the bottom of the sidebar.
+- **Rename:** Hover over a folder and click the pencil icon.
+- **Delete:** Hover over a folder and click the trash can. Scripts inside are safely moved to "Uncategorized".
+
+**Script Actions:**
+
+- **Organize:** Drag and drop scripts directly into folders!
 
 **Active Script:**
 
@@ -171,9 +183,8 @@ Scriptographer includes 5 pre-loaded scripts:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│ [Script Name Input]                        [Save Button]│
-├─────────────────────────────────────────────────────────┤
-│ [Description Input]              [Tags Input]            │
+│ [Script Name Input]      [Category Dropdown]            │
+│ [Description Input]      [Tags Input]     [Save Button] │
 ├─────────────────────────────────────────────────────────┤
 │                                                          │
 │ # PowerShell Code                                        │
@@ -199,6 +210,15 @@ Scriptographer includes 5 pre-loaded scripts:
 - Use descriptive names
 - Follow naming convention (e.g., "Verb-Noun")
 - Examples: "Get-SystemInfo", "Clear-TempFiles"
+
+#### Category
+
+- **Location:** Top right, next to the script name
+- **Type:** Dropdown select
+- **Required:** No (defaults to Uncategorized)
+
+**Usage:**
+Easily assign the selected script to an existing category, or remove it from all categories. Categories are created in the Script Library sidebar.
 
 #### Description
 

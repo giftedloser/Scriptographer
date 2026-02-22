@@ -17,14 +17,17 @@ Get up and running with Scriptographer in 5 minutes.
 │          │                          │                   │
 │ Search   │ Script Name              │ Method:           │
 │ ────────│ Description, Tags        │ ○ PSRemoting      │
-│          │                          │ ○ Copy-First      │
-│ Script 1 │ ┌────────────────────┐  │ ○ PsExec          │
-│ Script 2 │ │ PowerShell Code    │  │                   │
-│ Script 3 │ │                    │  │ Targets:          │
-│ Script 4 │ │                    │  │ ┌───────────────┐ │
-│ Script 5 │ │                    │  │ │ PC-001        │ │
-│          │ │                    │  │ │ PC-002        │ │
-│ + New    │ └────────────────────┘  │ └───────────────┘ │
+│          │ Category [Dropdown]      │ ○ Copy-First      │
+│ 📁 Maint │ ┌────────────────────┐  │ ○ PsExec          │
+│   Script1│ │ PowerShell Code    │  │                   │
+│   Script2│ │                    │  │ Targets:          │
+│ 📁 Utils │ │                    │  │ ┌───────────────┐ │
+│   Script3│ │                    │  │ │ PC-001        │ │
+│ 📁 Uncat │ │                    │  │ │ PC-002        │ │
+│   Script4│ └────────────────────┘  │ └───────────────┘ │
+│          │                          │                   │
+│ + Script │ [Save (Ctrl+S)]          │ [Deploy (Ctrl+D)] │
+│ + Folder │                          │                   │
 │          │                          │                   │
 │          │ [Save (Ctrl+S)]          │ [Deploy (Ctrl+D)] │
 │          │                          │                   │
@@ -164,6 +167,7 @@ Output shows per-target results:
 At the top of the editor:
 
 - **Name:** `My Custom Script`
+- **Category:** `Uncategorized` (or select an existing folder)
 - **Description:** `Does something useful`
 - **Tags:** `custom, test`
 
@@ -205,10 +209,17 @@ The script is now saved to the database!
 2. Click the **trash icon** that appears
 3. Confirm deletion
 
+### Organize into Categories
+
+1. Click the **+ Folder** icon in the sidebar to create a new Category.
+2. Drag and drop any script into the new Category folder.
+3. You can rename categories by hovering over them and clicking the **pencil icon**.
+4. Deleting a Category simply moves all of its scripts to the "Uncategorized" section automatically.
+
 ### Edit Existing Scripts
 
 1. Click any script in the list
-2. Modify code, name, or description
+2. Modify code, name, description, or category
 3. Press **Ctrl+S** to save changes
 
 ## Common Tasks
