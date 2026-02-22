@@ -4,9 +4,9 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey) ![License](https://img.shields.io/badge/license-MIT-green)
 
-Deploy scripts to multiple machines simultaneously — with real-time feedback, full execution logging, and a UI that doesn't get in the way.
-
 <img width="1384" height="861" alt="image" src="https://github.com/user-attachments/assets/53fc6437-3fa0-40a5-a1bf-c177a95a3f65" />
+
+Deploy scripts to multiple machines simultaneously — with real-time feedback, full execution logging, and a UI that doesn't get in the way.
 
 
 ---
